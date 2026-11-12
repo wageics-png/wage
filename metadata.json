@@ -1,0 +1,6 @@
+{
+  "name": "WAGE Marketplace — Pakistan",
+  "description": "Premium Pakistani classifieds & commerce marketplace with Luxury Emerald and Champagne Gold design, customer direct trading, and comprehensive administrator control suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

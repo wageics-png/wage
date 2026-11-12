@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-jakarta);
+    background-color: #021a12;
+    color: #f1f5f9;
+  }
+
+  h1, h2, h3, .font-luxury {
+    font-family: var(--font-cinzel), serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Glossy Luxury Emerald Glass Effects */
+.glass-emerald-card {
+  background: linear-gradient(135deg, rgba(6, 48, 35, 0.72) 0%, rgba(2, 28, 20, 0.85) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass-emerald-card-hover:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6), 0 0 20px -3px rgba(212, 175, 55, 0.12);
+  transform: translateY(-2px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-gold-pill {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(180, 142, 38, 0.06) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #f6e09e;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef3c7 0%, #d4af37 50%, #b38924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-gradient-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #021a12;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d4a36;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
